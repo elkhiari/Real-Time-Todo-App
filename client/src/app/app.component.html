@@ -1,0 +1,6 @@
+<div class="min-h-screen pb-10 w-full bg-slate-300">
+  <app-nav-bar (btnClick)="onModelClick()"></app-nav-bar>
+  <app-one-task [tasks]="tasks" [socket]="socket"></app-one-task>
+</div>
+
+<app-model *ngIf="modelIsActive" [socket]="socket" (btnClick)="onModelClick()"></app-model>
